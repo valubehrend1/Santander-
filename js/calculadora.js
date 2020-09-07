@@ -73,7 +73,7 @@ button.addEventListener("click", function () {
 
   //Vínculo con api/Lugar, Día y horario
   fetch(
-    "http://api.openweathermap.org/data/2.5/forecast?q=" +
+    "https://api.openweathermap.org/data/2.5/forecast?q=" +
       inputValueCity.value +
       "&units=metric&appid=2563b0ad8c89759de2024abd69c7371e"
   )
@@ -118,7 +118,7 @@ button.addEventListener("click", function () {
         beerRatio = 3;
       }
       recommend.innerHTML =
-        "RECOMENDAMOS COMPRAR" + beerBoxesCalc() + "" + caja + " DE BIRRA";
+        "RECOMENDAMOS COMPRAR " + beerBoxesCalc() + "" + caja + " DE BIRRA";
 
       //Condicional descripción de clima
       if (degreeValue < 15) {
@@ -138,5 +138,5 @@ button.addEventListener("click", function () {
         left: 0,
         behavior: "smooth",
       });
-    });
+    }).catch(err=>{console.log(err)})
 });
