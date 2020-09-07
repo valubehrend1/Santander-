@@ -1,30 +1,24 @@
 var d = document;
+var username = document.getElementById("user");
+var password = document.getElementById("pass");
 
-
-const submitBtn = d.getElementById('submit-btn');
-const incompleteField = d.getElementById('incomplete-field');
+const submitBtn = d.getElementById("submit-btn");
+const incompleteField = d.getElementById("incomplete-field");
 
 const validate = (e) => {
   e.preventDefault();
-  const username = document.getElementById('user');
-  const password = document.getElementById('pass');
-  if (username.value.length == 0) {
+  if (username.value.length == 0 || password.value.length == 0) {
     incompleteField.innerHTML = "Todos los campos son obligatorios";
     username.focus();
     return false;
   } else {
-    incompleteField.innerHTML = '';
-};  
-
-  if (password.value.length == 0) {
-    incompleteField.innerHTML = "Todos los campos son obligatorios";
-    password.focus();
-    return false;
-  } else {
-    incompleteField.innerHTML = '';
-}  
-  
-  return true;
+    incompleteField.innerHTML = "";
+  }
+  if (username.value == "user" && password.value == "user") {
+    location.href = "./html/inicio-user.html";
+  } else if (username.value == "admin" && password.value == "admin") {
+    location.href = "./html/inicio-admin.html";
+  }
 };
 
-submitBtn.addEventListener('click', validate);
+submitBtn.addEventListener("click", validate);

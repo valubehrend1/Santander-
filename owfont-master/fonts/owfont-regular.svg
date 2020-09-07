@@ -1,5 +1,5 @@
 <?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!DOCTYPE svg PUBLIC"-//W3C//DTD SVG 1.1//EN""http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg>
 <metadata>
 Created by FontForge 20110222 at Wed Feb 11 17:55:33 2015
@@ -30,7 +30,7 @@ q-71 -41 -125 3q-56 42 -33 121q16 51 113.5 80t98.5 29q2 -3 -2.5 -104t-51.5 -129z
  />
     <glyph glyph-name="glyph2" horiz-adv-x="2048" 
  />
-    <glyph glyph-name="space" unicode=" " horiz-adv-x="2048" 
+    <glyph glyph-name="space" unicode="" horiz-adv-x="2048" 
  />
     <glyph glyph-name="uniEB28" unicode="&#xeb28;" 
 d="M652 895q-56 -19 -122 -19q-149 0 -254 93t-105 225q0 111 76 196t192 112q11 156 141.5 265.5t311.5 109.5q130 0 237 -59.5t164 -155.5q64 17 131 17q187 0 320 -118t133 -284q0 -167 -133 -284t-320 -117q-68 0 -119 14q-137 -87 -323 -87q-193 0 -330 92zM1235 530
